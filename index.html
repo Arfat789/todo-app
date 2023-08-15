@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaQueries.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js" integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+
+</head>
+
+
+
+
+<body class="dark" id="body" onload="update()">
+<!-- the header section starts from here -->
+<header>
+
+
+<div class="main-top-box">
+<div class="icon-top-box flex">
+  <h1>TODO</h1> <!--the is the main title-->
+  <img id="change-theme" class="pointer" src="images/icon-moon.svg" alt=""> <!--this is the button to change the theme-->
+</div>
+
+<div class="text-input">
+  <div id="circle" class="circle"></div>
+<input placeholder="Create a new todo list" id="input" type="text"> <!--This is to take the user input-->
+</div>
+</div>
+</header>
+
+
+<section class="main-body">
+
+<div id="container" class="list-container">
+
+  <div id='list-box' class="list-box">
+
+    <div class="circles">
+       <div id="tick " class="tick  ">
+         <img src="images/icon-check.svg" alt="">
+      </div> 
+    </div>
+   <p>The list is empty</p> 
+
+  </div>
+  <div> <div id="tick-box" class="circles">
+    <div index= " '+ indexx+ '" id="tick" class="tick active ">
+      <img src="images/icon-check.svg" alt="">
+    </div></div> <p isDone="' +tasktexts[1]+ '"  class="paragraph ">'+tasktexts[0]+'</p> 
+  </div> <div><img class="remove" src="images/delete-button-svgrepo-com.svg" alt="" data-index="' +indexx+ '"></div>    
+
+
+</div>
+<footer>
+  
+  <p style="color: rgb(107, 100, 100);" id="item-counter">0 Items left</p>
+      <div>
+        <h3 id="all" class="pointer">All</h3>
+        <h3 id="active" class="pointer">Active</h3>
+        <h3 class="pointer" id="completed">Completed</h3>
+      </div>
+    <h3 style="color: rgb(101, 94, 94); font-weight: 100;"  id="clearCompleted"  class="pointer">Clear Completed</h3>  
+
+</footer>
+
+
+</section>
+<script src="main.js" defer></script>
+<script>
+ 
+</script>
+
+</body>
+</html>

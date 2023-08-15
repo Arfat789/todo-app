@@ -1,0 +1,63 @@
+@media  screen and (max-width: 800px) {
+    .main-top-box{
+        width :500px;
+
+        
+    }
+
+    .list-container{
+   
+        
+        width: 500px;
+        
+       
+        
+    }
+    footer{
+        width: 500px;
+    }
+  }
+
+
+
+  @media  screen and (max-width: 800px) {
+
+
+    :root{
+      
+        --bg-image:url('images/bg-mobile-light.jpg')
+    }
+
+   .dark{
+    
+
+    --bg-image:url('images/bg-mobile-dark.jpg')
+    
+}
+
+    .main-top-box{
+        width :90vw;
+
+        
+    }
+
+    .list-container{
+   
+        height: 50vh;
+        width: 90vw;
+        
+       
+        
+    }
+    footer{
+        width: 90vw;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    footer div{
+        gap: 40px;
+        /* justify-content: space-evenly; */
+        /* align-items: center; */
+    }
+  }
